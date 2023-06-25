@@ -1,0 +1,15 @@
+<hr />
+<h5>Equipements</h5>
+<br />
+<div class="row my-3 ml-3" *ngFor="let equipement of equipements">
+  <div class="col-2 my-2 text-center">
+    <span class="border border-secondary rounded-circle p-3">
+      <fa-icon [icon]="equipement.icon"></fa-icon
+    ></span>
+  </div>
+  <!-- {{ equipement.icon }} -->
+  <div class="col-10 mb-4">
+    <h5>{{ equipement.titre }}</h5>
+    {{ equipement.description }}
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.not-found {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 700px;
+  background-image: url("../../../assets/img/404.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#back {
+  position: relative;
+  top: 80%;
+}

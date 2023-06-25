@@ -1,0 +1,16 @@
+.carousel {
+  background: transparent;
+}
+.price {
+  font-size: 22px;
+}
+
+.per-night {
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.comments {
+  font-weight: 200;
+  font-size: 15px;
+}

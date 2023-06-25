@@ -1,0 +1,144 @@
+<div class="container">
+  <div class="row my-3">
+    <div class="col-12">
+      <div class="card p-3">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 my-2">
+            <carousel
+              [cellsToShow]="1"
+              cellWidth="100%"
+              [borderRadius]="10"
+              transitionTimingFunction="linear"
+              [transitionDuration]="500"
+              [dots]="true"
+              [minSwipeDistance]="0"
+              [arrows]="false"
+              arrowsTheme="dark"
+              class="my-3"
+            >
+              <div *ngFor="let image of images" class="carousel-cell">
+                <img [src]="image.path" />
+              </div>
+            </carousel>
+          </div>
+          <div class="col-md-8 col-sm-12 p-3">
+            <h3 class="offre-title">Modern apartment with terrace.</h3>
+            <hr />
+            <h5 class="offre-location light-text">
+              <fa-icon [icon]="markerIcon"></fa-icon> 230 rue Essaada , Rabat
+            </h5>
+            <h5 class="offre-guests light-text">
+              <fa-icon [icon]="userIcon"></fa-icon> 2 guests
+            </h5>
+            <h5 class="offre-calendar light-text">
+              <fa-icon [icon]="calendarIcon"></fa-icon>
+              Du 20/06 au 28/06
+            </h5>
+            <div class="actions text-right">
+              <a href="#" class="genric-btn info-border circle mx-2"
+                ><fa-icon [icon]="eyeIcon"></fa-icon> Voir</a
+              >
+              <a href="#" class="genric-btn danger-border circle mx-2">
+                <fa-icon [icon]="trashIcon"></fa-icon> Supprimer</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 my-2">
+      <div class="card p-3">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <carousel
+              [cellsToShow]="1"
+              cellWidth="100%"
+              [borderRadius]="10"
+              transitionTimingFunction="linear"
+              [transitionDuration]="500"
+              [dots]="true"
+              [minSwipeDistance]="0"
+              [arrows]="false"
+              arrowsTheme="dark"
+              class="my-3"
+            >
+              <div *ngFor="let image of images" class="carousel-cell">
+                <img [src]="image.path" />
+              </div>
+            </carousel>
+          </div>
+          <div class="col-md-8 col-sm-12 p-3">
+            <h3 class="offre-title">Appt sea view, pool.downtown.</h3>
+            <hr />
+            <h5 class="offre-location light-text">
+              <fa-icon [icon]="markerIcon"></fa-icon> 230 rue Essaada , Rabat
+            </h5>
+            <h5 class="offre-guests light-text">
+              <fa-icon [icon]="userIcon"></fa-icon> 2 guests
+            </h5>
+            <h5 class="offre-calendar light-text">
+              <fa-icon [icon]="calendarIcon"></fa-icon>
+              Du 20/06 au 28/06
+            </h5>
+            <div class="actions text-right">
+              <a href="#" class="genric-btn info-border circle mx-2"
+                ><fa-icon [icon]="eyeIcon"></fa-icon> Voir</a
+              >
+              <a href="#" class="genric-btn danger-border circle mx-2">
+                <fa-icon [icon]="trashIcon"></fa-icon> Supprimer</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 my-2">
+      <div class="card p-3">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <carousel
+              [cellsToShow]="1"
+              cellWidth="100%"
+              [borderRadius]="10"
+              transitionTimingFunction="linear"
+              [transitionDuration]="500"
+              [dots]="true"
+              [minSwipeDistance]="0"
+              [arrows]="false"
+              arrowsTheme="dark"
+              class="my-3"
+            >
+              <div *ngFor="let image of images" class="carousel-cell">
+                <img [src]="image.path" />
+              </div>
+            </carousel>
+          </div>
+          <div class="col-md-8 col-sm-12 p-3">
+            <h3 class="offre-title">
+              Prime Location Condo/Ocean View/Newly Renovated
+            </h3>
+            <hr />
+            <h5 class="offre-location light-text">
+              <fa-icon [icon]="markerIcon"></fa-icon> 230 rue Essaada , Rabat
+            </h5>
+            <h5 class="offre-guests light-text">
+              <fa-icon [icon]="userIcon"></fa-icon> 2 guests
+            </h5>
+            <h5 class="offre-calendar light-text">
+              <fa-icon [icon]="calendarIcon"></fa-icon>
+              Du 20/06 au 28/06
+            </h5>
+            <div class="actions text-right">
+              <a href="#" class="genric-btn info-border circle mx-2"
+                ><fa-icon [icon]="eyeIcon"></fa-icon> Voir</a
+              >
+              <a href="#" class="genric-btn danger-border circle mx-2">
+                <fa-icon [icon]="trashIcon"></fa-icon> Supprimer</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

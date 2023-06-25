@@ -1,0 +1,10 @@
+<form #checkout="ngForm" (ngSubmit)="onSubmit(checkout)" class="checkout">
+  <div class="form-row">
+    <label for="card-info">Informations bancaire</label>
+    <div style="width: 30em" id="card-info" #cardInfo></div>
+
+    <div id="card-errors" role="alert" *ngIf="error">{{ error }}</div>
+  </div>
+
+  <button type="submit">Paye</button>
+</form>

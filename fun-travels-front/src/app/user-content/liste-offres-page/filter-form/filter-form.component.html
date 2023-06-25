@@ -1,0 +1,48 @@
+<div class="filter_result_wrap sticky-top pt-3">
+  <h3>Filtre des resultats</h3>
+  <div class="filter_bordered">
+    <div class="filter_inner">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="single_select">
+            <select class="form-control my-3">
+              <option data-display="Country">Ville</option>
+              <option value="1">Africa</option>
+              <option value="2">canada</option>
+              <option value="4">USA</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="single_select">
+            <select class="form-control my-3">
+              <option data-display="Travel type">Type logement</option>
+              <option value="1">advance</option>
+              <option value="2">advance</option>
+              <option value="4">premium</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="range_slider_wrap">
+            <span class="range">Prix</span>
+            <npn-slider
+              class="my-slider"
+              [min]="100"
+              [max]="4000"
+              [minSelected]="700"
+              [maxSelected]="2000"
+              [step]="100"
+              [showStepIndicator]="true"
+            >
+            </npn-slider>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reset_btn my-4">
+      <button class="boxed-btn4" type="submit">Reset</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+server:
+  port: 8087
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/fun_travels?useSSL=false&useUnicode=yes&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: cigmastudent
+    password: cigmastudent
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate.ddl-auto: create-drop
+
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+logging:
+  level:
+    org.springframework.web: error
+    org.hibernate: error
+    com.tppfe: error

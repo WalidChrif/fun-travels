@@ -1,0 +1,12 @@
+<hr />
+<h5>Conditions</h5>
+<div class="row my-3 ml-3" *ngFor="let condition of conditions">
+  <div class="col-2 my-2 text-center">
+    <span class="border border-secondary rounded-circle p-3">
+      <fa-icon [icon]="condition.icon"></fa-icon
+    ></span>
+  </div>
+  <div class="col-10 mb-4">
+    {{ condition.contenu }}
+  </div>
+</div>

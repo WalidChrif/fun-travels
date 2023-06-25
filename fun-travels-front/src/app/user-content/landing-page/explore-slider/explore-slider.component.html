@@ -1,0 +1,23 @@
+<carousel
+  [height]="600"
+  [cellsToShow]="1"
+  cellWidth="100%"
+  [borderRadius]="10"
+  transitionTimingFunction="linear"
+  [transitionDuration]="500"
+  [dots]="true"
+  [minSwipeDistance]="0"
+  arrowsTheme="dark"
+>
+  <div
+    style="background-image: url({{ image.path }})"
+    *ngFor="let image of images"
+    class="carousel-cell"
+  >
+    <div class="slider_text text-center">
+      <h3>{{ image.titre }}</h3>
+      <p>{{ image.contenu }}</p>
+      <a href="#" class="boxed-btn3">Explorer</a>
+    </div>
+  </div>
+</carousel>

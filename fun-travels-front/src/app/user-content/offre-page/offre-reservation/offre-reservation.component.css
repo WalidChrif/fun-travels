@@ -1,0 +1,46 @@
+.form-group.hidden {
+  width: 0;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.boxed-btn4 {
+  width: 39px;
+  padding: 0px;
+  height: 39px;
+}
+
+.custom-day {
+  text-align: center;
+  padding: 0.185rem 0.25rem;
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+}
+.custom-day.focused {
+  background-color: #e6e6e6;
+}
+.custom-day.range,
+.custom-day:hover {
+  background-color: #ff4a52;
+  color: white;
+}
+
+.custom-day.faded {
+  background-color: #ff4a68bb;
+}
+
+.price {
+  font-size: 22px;
+}
+
+.per-night {
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.comments {
+  font-weight: 200;
+  font-size: 15px;
+}

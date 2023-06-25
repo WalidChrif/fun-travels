@@ -1,0 +1,28 @@
+form.checkout {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  padding: 0.5rem 2rem;
+  background: white;
+  color: #525252;
+  font-size: 1.1rem;
+}
+
+form.checkout button {
+  padding: 0.5rem 1rem;
+  color: white;
+  background: #1ec6b6 !important;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+form.checkout button:active {
+  background: #ff4a52 !important;
+}
+
+.InputContainer .InputElement {
+  display: block !important;
+}

@@ -1,0 +1,117 @@
+<div class="filter_result_wrap sticky-top pt-3">
+  <div class="filter_bordered">
+    <div class="reservation-price mb-4">
+      <h4 class="price">
+        MAD350<span class="per-night">/ nuit</span> &nbsp;<span
+          class="text-muted comments"
+          >(113 commentaires)</span
+        >
+      </h4>
+    </div>
+    <div class="filter_inner">
+      <div class="row">
+        <div class="col-lg-12" *ngIf="reservationLoaded">
+          <div class="form-group hidden">
+            <div class="input-group">
+              <input
+                type="hidden"
+                [minDate]="startDate"
+                [maxDate]="endDate"
+                [markDisabled]="isDisabled"
+                name="datepicker"
+                class="form-control"
+                ngbDatepicker
+                #datepicker="ngbDatepicker"
+                [autoClose]="'outside'"
+                (dateSelect)="onDateSelection($event)"
+                [displayMonths]="1"
+                [dayTemplate]="t"
+                outsideDays="hidden"
+                [startDate]="fromDate!"
+                tabindex="-1"
+                placement="bottom"
+                [positionTarget]="dpToDate"
+              />
+              <ng-template #t let-date let-focused="focused">
+                <span
+                  class="custom-day"
+                  [class.focused]="focused"
+                  [class.range]="isRange(date)"
+                  [class.faded]="isHovered(date) || isInside(date)"
+                  (mouseenter)="hoveredDate = date"
+                  (mouseleave)="hoveredDate = null"
+                >
+                  {{ date.day }}
+                </span>
+              </ng-template>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <input
+                #dpFromDate
+                class="form-control"
+                placeholder="Arrivee"
+                name="dpFromDate"
+                [value]="formatter.format(fromDate)"
+                (input)="fromDate = validateInput(fromDate, dpFromDate.value)"
+              />
+              <div class="input-group-append">
+                <button
+                  class="boxed-btn4 calendar"
+                  (click)="datepicker.toggle()"
+                  type="button"
+                >
+                  <fa-icon [icon]="faCalendar"></fa-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <input
+                #dpToDate
+                class="form-control"
+                placeholder="Depart"
+                name="dpToDate"
+                [value]="formatter.format(toDate)"
+                (input)="toDate = validateInput(toDate, dpToDate.value)"
+              />
+              <div class="input-group-append">
+                <button
+                  class="boxed-btn4 calendar"
+                  (click)="datepicker.toggle()"
+                  type="button"
+                >
+                  <fa-icon [icon]="faCalendar"></fa-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 my-3">
+          <select value="option2" class="form-control">
+            <option>Voyageurs</option>
+            <option value="option1">1 Voyageur</option>
+            <option value="option2">2 Voyageurs</option>
+            <option value="option3">3 Voyageurs</option>
+          </select>
+        </div>
+        <div class="col-lg-12 my-3">
+          <select class="form-control" #mode>
+            <option>Mode de paiement</option>
+            <option value="option1">Cash</option>
+            <option value="option2">Credit Card</option>
+          </select>
+        </div>
+        <div class="col-lg-12 my-3" *ngIf="mode.value == 'option2'">
+          <app-paiement-area></app-paiement-area>
+        </div>
+      </div>
+    </div>
+
+    <div class="reset_btn my-3">
+      <button class="boxed-btn4" type="submit">Reserver</button>
+    </div>
+  </div>
+</div>

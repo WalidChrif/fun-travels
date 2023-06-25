@@ -1,0 +1,127 @@
+<div class="container">
+  <div class="row my-3">
+    <div class="col-12 my-3">
+      <div class="input_field">
+        <select>
+          <option data-display="type voyage" disabled>Type offre</option>
+          <option value="1">Approuvee</option>
+          <option value="2">En cours</option>
+          <option value="3">Rejectee</option>
+        </select>
+      </div>
+      <button class="genric-btn info-border circle mx-2 float-right">
+        <fa-icon [icon]="addIcon"></fa-icon> ajouter
+      </button>
+    </div>
+    <div class="col-12 my-2">
+      <div class="card p-3">
+        <div class="row">
+          <div class="col-4">
+            <carousel
+              [cellsToShow]="1"
+              cellWidth="100%"
+              [borderRadius]="10"
+              transitionTimingFunction="linear"
+              [transitionDuration]="500"
+              [dots]="true"
+              [minSwipeDistance]="0"
+              [arrows]="false"
+              arrowsTheme="dark"
+              class="my-3"
+            >
+              <div *ngFor="let image of images" class="carousel-cell">
+                <img [src]="image.path" />
+              </div>
+            </carousel>
+          </div>
+          <div class="col-8">
+            <div class="reservation-price mb-4 float-right">
+              <h4 class="price">
+                MAD350<span class="per-night">/ nuit</span> &nbsp;<span
+                  class="text-muted comments"
+                  >(113 commentaires)</span
+                >
+              </h4>
+            </div>
+            <br />
+            <h3 class="offre-title">Title</h3>
+            <hr />
+            <p class="offre-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              error architecto velit, nemo impedit, optio, distinctio molestiae
+              illum commodi qui officia libero voluptatibus soluta odit hic
+              blanditiis veritatis ducimus recusandae?
+            </p>
+            <div class="actions text-right">
+              <button class="genric-btn success-border circle mx-2">
+                <fa-icon [icon]="listIcon"></fa-icon> Reservations
+              </button>
+              <button class="genric-btn info-border circle mx-2">
+                <fa-icon [icon]="eyeIcon"></fa-icon> Voir
+              </button>
+              <button class="genric-btn danger-border circle mx-2">
+                <fa-icon [icon]="trashIcon"></fa-icon> Supprimer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 my-2">
+      <div class="card p-3">
+        <div class="row">
+          <div class="col-4">
+            <carousel
+              [cellsToShow]="1"
+              cellWidth="100%"
+              [borderRadius]="10"
+              transitionTimingFunction="linear"
+              [transitionDuration]="500"
+              [dots]="true"
+              [minSwipeDistance]="0"
+              [arrows]="false"
+              arrowsTheme="dark"
+              class="my-3"
+            >
+              <div *ngFor="let image of images" class="carousel-cell">
+                <img [src]="image.path" />
+              </div>
+            </carousel>
+          </div>
+          <div class="col-8">
+            <div class="reservation-price mb-4 float-right">
+              <h4 class="price">
+                MAD700<span class="per-night">/ nuit</span> &nbsp;<span
+                  class="text-muted comments"
+                  >(89 commentaires)</span
+                >
+              </h4>
+            </div>
+            <br />
+            <h3 class="offre-title">
+              Prime Location Condo/Ocean View/Newly Renovated
+            </h3>
+            <hr />
+            <p class="offre-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              error architecto velit, nemo impedit, optio, distinctio molestiae
+              illum commodi qui officia libero voluptatibus soluta odit hic
+              blanditiis veritatis ducimus recusandae?
+            </p>
+            <div class="actions text-right">
+              <a href="#" class="genric-btn success-border circle mx-2"
+                ><fa-icon [icon]="listIcon"></fa-icon> Reservations</a
+              >
+              <a href="#" class="genric-btn info-border circle mx-2"
+                ><fa-icon [icon]="eyeIcon"></fa-icon> Voir</a
+              >
+              <a href="#" class="genric-btn danger-border circle mx-2">
+                <fa-icon [icon]="trashIcon"></fa-icon> Supprimer</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

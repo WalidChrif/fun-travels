@@ -1,0 +1,37 @@
+.my-slider::ng-deep .slider .bar > span.left-handle {
+  background: #fc4951 !important;
+  border: 7px solid #ebd2d2 !important;
+}
+
+.my-slider::ng-deep .slider .bar > span.right-handle {
+  background: #fc4951 !important;
+  border: 7px solid #ebd2d2 !important;
+}
+
+.my-slider::ng-deep .slider .bar div.filler > span {
+  background: #fc4951 !important;
+}
+
+.my-slider::ng-deep .slider .bar > span.left-handle .handle-tooltip {
+  color: #efefef !important;
+  background: #fc4951 !important;
+  border: 1px solid #c37a7a !important;
+}
+
+.my-slider::ng-deep .slider .bar > span.left-handle .handle-tooltip:after {
+  border-top-color: #ebd2d2 !important;
+}
+
+.my-slider::ng-deep .slider .bar > span.right-handle .handle-tooltip {
+  color: #efefef !important;
+  background: #fc4951 !important;
+  border: 1px solid #c37a7a !important;
+}
+
+.my-slider::ng-deep .slider .bar > span.right-handle .handle-tooltip:after {
+  border-top-color: #ebd2d2 !important;
+}
+
+.my-slider::ng-deep .slider .bar div.filler > div.step-indicators > span {
+  background: #b35757 !important;
+}

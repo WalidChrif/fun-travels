@@ -1,0 +1,44 @@
+<!--================Blog Area =================-->
+<section class="blog_area single-post-area section-padding">
+  <div class="container">
+    <div class="row" *ngIf="offre">
+      <div class="col-lg-8">
+        <div class="offre-title">
+          <h2 class="ml-5">{{ offre.titre }}</h2>
+        </div>
+        <app-offre-slider></app-offre-slider>
+        <hr />
+        <h2>{{ offre.type }} . Hote: {{ offre.proprietaire.prenom }}</h2>
+        <h6 class="d-inline">{{ offre.nb_voyageurs }} Voyageurs.</h6>
+        <!-- <h6 class="d-inline" *ngFor="let unite of offre.unites">
+          {{ unite.nombre }} {{ unite.nom }}.
+        </h6> -->
+        <h6 class="d-inline">3 chambres, 1 salle de bain, 1 terasse</h6>
+        <hr />
+        <!-- offre-description -->
+        <h5>Description</h5>
+        <p class="lead mb-5">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+          suscipit animi aperiam fugit ipsum incidunt voluptatibus est neque
+          molestiae? Obcaecati quam maxime praesentium quasi consectetur at cum,
+          voluptas est error.
+        </p>
+        <app-offre-unites></app-offre-unites>
+        <app-offre-equipement></app-offre-equipement>
+        <app-offre-conditions></app-offre-conditions>
+        <!-- offre-comments -->
+        <!-- offre-calendrier -->
+        <app-offre-calendrier [offre]="offre"></app-offre-calendrier>
+
+        <app-offre-emplacement></app-offre-emplacement>
+        <app-offre-proprietaire
+          [proprietaire]="offre.proprietaire"
+        ></app-offre-proprietaire>
+      </div>
+      <div class="col-lg-4">
+        <app-offre-reservation [offre]="offre"></app-offre-reservation>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================ Blog Area end =================-->
