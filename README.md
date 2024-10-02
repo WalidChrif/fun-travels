@@ -11,7 +11,7 @@
 - [License](#license)
 
 ## Introduction
-**FunTravels** is a comprehensive real estate and vacation management platform developed as part of my PFE (Projet de Fin d'Études) project for my professional license at FST Settat. The platform aims to simplify the processes involved in property listing, booking, and management for both property owners and travelers. Using a combination of modern web technologies, FunTravels provides a seamless user experience while ensuring efficient backend operations.
+**FunTravels** is a comprehensive real estate and vacation management platform developed as part of my PFE (Projet de Fin d'Études) project for my professional license at **FST Settat**. The platform aims to simplify the processes involved in property listing, booking, and management for both property owners and travelers. Using a combination of modern web technologies, FunTravels provides a seamless user experience while ensuring efficient backend operations.
 
 ## Features
 - **Property Listings**: Users can browse and search for available properties based on various criteria.
